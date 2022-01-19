@@ -1,24 +1,47 @@
 <template>
-    <v-container>
-        <div class="d-flex justify-space-around mb-4">
+    <v-container color="teal" width="100vw">
+        <div class="d-flex justify-end mb-2">
             <!-- Mobile Menu Icon -->
              <v-btn id="toggleBtn"
+            @click="navDrawer = !navDrawer"
             class="mx-2 pa-9"
             fab
-            color="teal"
             >
-                <v-icon dark dense color="yellow" >
+                <v-icon dark dense color="black" >
                     I
                 </v-icon>
             </v-btn>
 
-            <v-btn id="navBtn"
+            <v-btn class="navBtn ml-5"
             v-for="link in links"
             :key="link"
             text
             >
                 {{ link }}
             </v-btn>
+        </div>
+        <div>
+          
+            <v-navigation-drawer 
+                v-model="navDrawer"
+                temporary
+                absolute
+                width="50vw"
+                >
+                <v-list class="mt-12 pt-12" dense>
+                    <v-list-item 
+                    v-for="(link) in links"
+                    :key="link"
+                    text
+                    >
+                        {{ link }}
+                    </v-list-item>
+                </v-list>
+               
+              
+            
+            </v-navigation-drawer>
+           
         </div>
     </v-container>
 </template>
@@ -33,6 +56,7 @@
                 'Resume',
                 'Contact',
             ],
+            navDrawer: null
         })
     }
 </script>
@@ -41,13 +65,18 @@
     // for small screen 
     
     #toggleBtn {
-            margin: 60px 10px 20px;
             cursor: pointer;
         }
 
     // for medium screen 
-    @media screen and (min-width: 990px) {
+    @media screen and (min-width: 880px) {
         #toggleBtn {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 880px) {
+        .navBtn {
             display: none;
         }
     }

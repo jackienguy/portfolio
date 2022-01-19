@@ -2,7 +2,7 @@
     <v-app>
       <v-main>
         <v-sheet
-        height="60vh"
+        height="100vh"
         width="100vw"
         class="blue text-center"
         >
