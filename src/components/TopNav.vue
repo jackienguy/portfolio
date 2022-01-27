@@ -1,5 +1,5 @@
 <template>
-    <v-container color="teal" width="100vw">
+    <v-container width="100vw">
         <div class="d-flex justify-end mb-2">
             <!-- Mobile Menu Icon -->
              <v-btn id="toggleBtn"
@@ -8,7 +8,7 @@
             fab
             >
                 <v-icon dark dense color="black" >
-                    I
+                    fas fa-bars
                 </v-icon>
             </v-btn>
 
