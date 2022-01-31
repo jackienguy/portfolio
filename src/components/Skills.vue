@@ -6,21 +6,21 @@
             </v-col>
         </v-row>
 
-        <v-row justify="space-around" class=" mb-10">
-               <v-col class="d-flex justify-start">
-                
-                    <v-list-item
-                        v-for="skill in skills"
-                        :key="skill.title"
-                    >
-                        <v-list-item-icon>
+        <v-row justify="space-around" class="ml-12 mb-10">
+               <v-col 
+                v-for="skill in skills"
+                :key="skill.title"
+                col="4"
+                class="ma-5"
+               >
+                        <v-list-item-icon >
                             <v-icon large color="blue darken-2"> {{ skill.icon}}</v-icon>
                         </v-list-item-icon>
 
                         <v-list-item-content>
                             <v-list-item-title> {{ skill.title }}</v-list-item-title>
                         </v-list-item-content>
-                        </v-list-item>
+                       
                     
                 </v-col>
                 
