@@ -6,7 +6,7 @@
         width="100vw"
         class="blue text-center"
         >
-          <div id="about" >
+          <div id="about">
             <h1>Hi, I am Jackie</h1>
             <h1>Web Developer</h1>
           </div>
