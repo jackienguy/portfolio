@@ -6,18 +6,33 @@
             </v-col>
         </v-row>
 
-          <v-row class="projects-grid-container">
+          <v-row class="projects-grid-container ">
    
-                <div class="project-img">
-                   image goes here
+                <div class="project-img1">
+                   <v-img
+                    src="https://images.unsplash.com/photo-1429216967620-ece20ff3a5f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDlRVlJFSDlBM0RVfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                   ></v-img>
                 </div>
-                <div class="project-desc">
+                <div class="project-desc1">
                     <h3>Opt</h3>
+                    <p><v-icon>fab fa-vuejs</v-icon></p>
                     <p>Minimum Viable Product (MVP) for my web development final project. Opt is a HCM platform for recruitment </p>
-                    <p>Made with: <v-icon>fab fa-vuejs</v-icon></p>
                     <v-btn>Live Site</v-btn> | <v-btn>Code</v-btn>
                    
                 </div>
+
+                 <div class="project-desc2">
+                    <h3>Opt</h3>
+                    <p><v-icon>fab fa-vuejs</v-icon></p>
+                    <p>Minimum Viable Product (MVP) for my web development final project. Opt is a HCM platform for recruitment </p>
+                    <v-btn>Live Site</v-btn> | <v-btn>Code</v-btn>
+                </div>
+                <div class="project-img2">
+                   <v-img
+                    src="https://images.unsplash.com/photo-1429216967620-ece20ff3a5f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDlRVlJFSDlBM0RVfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                   ></v-img>
+                </div>
+               
          
         </v-row>
 
@@ -41,15 +56,35 @@
 .projects-grid-container > div {
     padding: 20px;
     text-align: center;
-    border: 2px black solid;
+   
 }
 
-.project-img {
+.project-img1 {
     grid-column: 1 / 2;
 }
 
-.project-desc {
-     grid-column: 2 / 3;
+.project-desc1 {
+    grid-column: 2 / 3;
+}
+
+.project-img2 {
+    grid-column: 2 / 3;
+}
+
+.project-desc2 {
+    grid-column: 1 / 2;
+}
+
+// Small screen 
+@media screen and (max-width: 700px ) {
+    .project-img1, .project-img2 {
+        grid-column: 1 / 3;
+    }
+
+   .project-desc1, .project-desc2{
+        grid-column: 1/ 3
+    }
+
 }
 
 </style>
