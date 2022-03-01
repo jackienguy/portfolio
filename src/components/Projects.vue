@@ -41,7 +41,7 @@
 
 <script>
     export default {
-        
+        name: "Projects"
     }
 </script>
 
@@ -61,6 +61,8 @@
 
 .project-img1 {
     grid-column: 1 / 2;
+    animation: fadeInTopLeft;
+    animation-duration: 2s;
 }
 
 .project-desc1 {
