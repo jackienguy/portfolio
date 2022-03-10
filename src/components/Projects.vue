@@ -8,12 +8,12 @@
 
           <v-row class="projects-grid-container ">
    
-                <div class="project-img1">
+                <div class="project-img1" data-aos="zoom-in" data-aos-duration="3000">
                    <v-img
                     src="https://images.unsplash.com/photo-1429216967620-ece20ff3a5f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDlRVlJFSDlBM0RVfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                    ></v-img>
                 </div>
-                <div class="project-desc1">
+                <div class="project-desc1" data-aos="zoom-in" data-aos-duration="3000">
                     <h3>Opt</h3>
                     <p><v-icon>fab fa-vuejs</v-icon></p>
                     <p>Minimum Viable Product (MVP) for my web development final project. Opt is a HCM platform for recruitment </p>
@@ -21,13 +21,13 @@
                    
                 </div>
 
-                 <div class="project-desc2">
+                 <div class="project-desc2" data-aos="zoom-in" data-aos-duration="3000">
                     <h3>Opt</h3>
                     <p><v-icon>fab fa-vuejs</v-icon></p>
                     <p>Minimum Viable Product (MVP) for my web development final project. Opt is a HCM platform for recruitment </p>
                     <v-btn>Live Site</v-btn> | <v-btn>Code</v-btn>
                 </div>
-                <div class="project-img2">
+                <div class="project-img2" data-aos="zoom-in" data-aos-duration="3000">
                    <v-img
                     src="https://images.unsplash.com/photo-1429216967620-ece20ff3a5f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDlRVlJFSDlBM0RVfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                    ></v-img>

@@ -1,5 +1,5 @@
 <template>
-    <v-app>
+    <v-app >
       <v-main>
         <!-- Hero Section -->
         <HomeHero/>
@@ -47,6 +47,8 @@ export default {
 * {
   padding: 0px;
   margin: 0px;
+  background-color: #01497c;
+  color: #ffd60a;
 }
 
 

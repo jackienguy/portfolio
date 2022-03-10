@@ -1,13 +1,14 @@
 <template>
-    <v-container width="100vw">
+    <div id=navBar>
         <div class="d-flex justify-end mb-2">
             <!-- Mobile Menu Icon -->
              <v-btn id="toggleBtn"
             @click="overlay = !overlay"
             class="mx-2 pa-9"
+            color="#01497c"
             fab
             >
-                <v-icon dark dense color="black" >
+                <v-icon dark dense color="#ffd60a" >
                     fas fa-bars
                 </v-icon>
             </v-btn>
@@ -72,7 +73,7 @@
            
            
         </div>
-    </v-container>
+    </div>
 </template>
 
 <script>
@@ -93,6 +94,13 @@
 </script>
 
 <style lang="scss" scoped>
+
+    #navBar {
+        background-color: #ffd60a;
+        padding-top: 10px;
+        position: sticky;
+    }
+
     // for small screen 
     
     #toggleBtn {
